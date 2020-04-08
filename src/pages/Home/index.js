@@ -7,7 +7,7 @@ import logo from '../../img/logo.png';
 
 export default function Home() {
 
-  const pokemons = [{name: "Bulbasaur", type:"grass", id: 1},{name: "Squirtle", type:"water", id: 2},{name: "Charmander", type:"fire", id: 3}];
+  const pokemons = [{name: "Bulbasaur", type:"Grass", id: 1},{name: "Squirtle", type:"Water", id: 2},{name: "Charmander", type:"Fire", id: 3}];
 
   return (
     <View style={styles.container}>
@@ -19,12 +19,13 @@ export default function Home() {
 
       <FlatList 
         data={pokemons}
+        style={styles.pokemonList}
         keyExtractor={pokemon => String(pokemon.id)}
         showsVerticalScrollIndicator={false}
         renderItem={({ item: pokemon}) => (
-          <View style={styles.listaPokemons}>
-            <Text styles={styles.pokemons}>{pokemon.name}</Text>
-            <Text styles={styles.pokemons}>{pokemon.type}</Text>
+          <View style={styles.pokemon}>
+            <Text styles={styles.pokemonValue}>{pokemon.name}</Text>
+            <Text styles={styles.pokemonValue}>{pokemon.type}</Text>
           </View>
         )}
       />

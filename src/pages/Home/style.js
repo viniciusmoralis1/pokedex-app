@@ -6,6 +6,7 @@ export default StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingTop: Constants.statusBarHeight + 18,
+    backgroundColor: "#E24134",
   },
   
   header: {
@@ -20,6 +21,17 @@ export default StyleSheet.create({
   
   textHeader: {
     fontSize: 13,
-    color: "#788389"
+    color: "#EEE"
+  },
+
+  pokemonList: {
+    marginTop: 32
+  },
+
+  pokemon: {
+    padding: 16,
+    borderRadius: 8,
+    backgroundColor: "#FFF",
+    marginBottom: 10
   },
 });
