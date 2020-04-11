@@ -25,7 +25,7 @@ export default StyleSheet.create({
   },
 
   pokemonList: {
-    marginTop: 32,
+    margin: 32
   },
 
   avatar: {
@@ -34,6 +34,7 @@ export default StyleSheet.create({
   },
 
   pokemon: {
+    flex: 3,
     alignItems: 'center',
     padding: 12,
     borderRadius: 8,

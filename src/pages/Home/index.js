@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, FlatList, useState } from 'react-native';
+import api from '../../services/api'; 
 
 import styles from './style';
 
@@ -11,6 +12,12 @@ export default function Home() {
   const pokemons = [{name: "Bulbasaur", type:"Grass", sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png", id: 1},
                     {name: "Charmander", type:"Fire", sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png", id: 2},
                     {name: "Squirtle", type:"Water", sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png", id: 3}];
+
+  // async function loadPokemons(){
+  //   const response = await api.get('/pokemon');
+
+  //   setPokemons(response.data);
+  // }
 
   return (
     <View style={styles.container}>
