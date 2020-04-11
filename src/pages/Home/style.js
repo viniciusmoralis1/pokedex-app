@@ -4,9 +4,9 @@ import Constants from 'expo-constants';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
     paddingTop: Constants.statusBarHeight + 18,
-    backgroundColor: "#E24134",
+    backgroundColor: "#E93134",
   },
   
   header: {
@@ -16,22 +16,28 @@ export default StyleSheet.create({
   },
 
   logo: {
-    width: '32%'
+    width: '32%',
   },
   
   textHeader: {
     fontSize: 13,
-    color: "#EEE"
+    color: "#EEE",
   },
 
   pokemonList: {
-    marginTop: 32
+    marginTop: 32,
+  },
+
+  avatar: {
+    width: 102,
+    height: 102,
   },
 
   pokemon: {
-    padding: 16,
+    alignItems: 'center',
+    padding: 12,
     borderRadius: 8,
     backgroundColor: "#FFF",
-    marginBottom: 10
+    marginBottom: 10,
   },
 });
